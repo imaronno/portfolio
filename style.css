@@ -694,5 +694,9 @@ textarea {
     color: blue;
     font-size: 160%;
 }
+#github{
+    color: white;
+    font-size: 160%;
+}
 
 @media only screen and (min-width:688px) and (max-width:992px) {}
