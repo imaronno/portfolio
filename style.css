@@ -686,5 +686,13 @@ textarea {
         width: 300px;
     }
 }
+#reddit{
+    color: orangered;
+    font-size: 160%;
+}
+#discord{
+    color: blue;
+    font-size: 160%;
+}
 
 @media only screen and (min-width:688px) and (max-width:992px) {}
