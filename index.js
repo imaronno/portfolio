@@ -1,7 +1,7 @@
 const preloaderWrapper = document.querySelector('.preloader-wrapper');
 
-window.addEventListener('load', function() {
-    preloaderWrapper.classList.add('fade-out-animation');
+window.addEventListener('load', function () {
+  preloaderWrapper.classList.add('fade-out-animation');
 });
 
 const toastTrigger = document.getElementById('liveToastBtn')
@@ -16,6 +16,7 @@ if (toastTrigger) {
 
 const preloaderWrapper = document.querySelector('.preloader-wrapper');
 
-window.addEventListener('load', function() {
-    preloaderWrapper.classList.add('fade-out-animation');
+window.addEventListener('load', function () {
+  preloaderWrapper.classList.add('fade-out-animation');
 });
+

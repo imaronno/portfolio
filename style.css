@@ -1,7 +1,21 @@
- body { 
-    font-family: 'Calligraffittill', cursive; 
-font-weight: 400;
-font-style: normal;
+@font-face {
+    font-family: "Spotify Mix Extrabold";
+    src: url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.eot");
+    src: url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.svg#Spotify Mix Extrabold")format("svg");
+}
+
+body {
+    font-family: "Spotify Mix Extrabold";
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.identifyh3- {
+    font-weight: bolder;
 }
 
 .top-banner {
@@ -18,17 +32,26 @@ font-style: normal;
     margin-bottom: 8%;
 }
 
+#text {
+    font-size: 2rem;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: fit-content;
+}
+
 .top-h1 {
-    font-weight:bold;
-    font-size: 30px;
-    text-align: center;
+    font-weight: bold;
+    font-size: 1050%;
+    margin-left: 3%;
     color: white;
 }
 
 
 .top-p {
-    font-size: 20px;
-    text-align: center;
+    font-size: 150%;
+    margin-left: 10%;
     color: white;
 }
 
@@ -50,11 +73,11 @@ font-style: normal;
 
 .i-s {
     margin-left: 65%;
-    margin-top: -13%;
+    margin-top: -8%;
+    font-weight: bolder;
 }
 
 .identify-0 {
-    background-color: antiquewhite;
     height: 300px;
     margin-top: 6%;
     padding-top: 3%;
@@ -69,6 +92,7 @@ font-style: normal;
 
 .icon-part-1 {
     color: #FFFFFF;
+    font-weight: bolder;
     background-image: url(images/icons/Js-background.jpg);
     height: 300px;
     border-radius: 3%;
@@ -125,6 +149,14 @@ font-style: normal;
     border-radius: 25px;
 }
 
+.ce-btn {
+    background-color: #B5784F;
+}
+
+.se-btn {
+    background-color: #94A1C0;
+}
+
 
 .ball {
     width: 400px;
@@ -135,6 +167,7 @@ font-style: normal;
 
 .icon-part-2 {
     color: #FFFFFF;
+    font-weight: bolder;
     background-image: url(images/icons/React-background.jpg);
     height: 300px;
     border-radius: 3%;
@@ -145,6 +178,7 @@ font-style: normal;
 
 .icon-part-3 {
     color: #FFFFFF;
+    font-weight: bolder;
     background-image: url(images/icons/Mongo-background.png);
     /* background-color: rgba(0, 128, 0, 0.271); */
     height: 300px;
@@ -184,6 +218,10 @@ font-style: normal;
     height: 1170px;
     border-radius: 15px;
     padding: 20px 0px;
+}
+
+.ph {
+    color: #f7211c;
 }
 
 .blog-2 img {
@@ -250,7 +288,7 @@ font-style: normal;
 
 .Footer {
     background-color: rgb(0, 7, 47);
-    height: 500px;
+    height: 510 px;
     color: white;
     border: black;
     padding: 3px;
@@ -344,14 +382,17 @@ textarea {
 
 
 
-.name,.email,.number,.message{
-  font-family: 'Calligraffitti' sans-serif;  
+.name,
+.email,
+.number,
+.message {
+    font-family: 'Calligraffitti' sans-serif;
 }
 
 
 
 .Address-0 {
-    margin-left: -7%;
+    margin-left: -10%;
     text-decoration: none;
     color: white;
 }
@@ -369,6 +410,8 @@ textarea {
     color: black;
 }
 
+
+
 .web-HTML {
     color: white;
     text-decoration: none;
@@ -376,7 +419,9 @@ textarea {
 
 
 
-
+.HTML5 {
+    font-weight: bolder;
+}
 
 
 .parent-section {
@@ -408,12 +453,13 @@ textarea {
     margin-right: 4%;
 }
 
-.new-section{
+.new-section {
     position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-    background-color: white ;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
+
 .AR {
     text-decoration: none;
     color: black;
@@ -426,6 +472,17 @@ textarea {
     padding: 6px 6px;
     border-radius: 8%;
     transition-duration: 0.1s;
+
+    color: black;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bolder;
+}
+
+.dropdown-item {
+    font-weight: bolder;
 }
 
 .AR:active {
@@ -492,8 +549,10 @@ textarea {
     margin-right: 29%;
     margin-top: -1%;
 }
-.i-s-3{
+
+.i-s-3 {
     font-size: 15px;
+    font-weight: bolder;
 }
 
 .Shepherd {
@@ -521,16 +580,37 @@ textarea {
     width: 1000px;
 }
 
+.mc {
+    padding-left: 250%;
+}
+
+.mc-2{
+    display: none;
+}
+
 @media only screen and (max-width:688px) {
+    .suiiiiiiiiii {
+        flex-direction: column;
+    }
+
+    .mc-2{
+        display: grid;
+    }
+    .mc {
+        display: none;
+    }
+
     .parent-section {
         font-size: 10px;
     }
-    .identify-0{
+
+    .identify-0 {
         padding-bottom: 1900px;
         margin-bottom: 90px;
     }
-    .i-s-3{
-        font: size 1px; 
+
+    .i-s-3 {
+        font: size 1px;
 
     }
 
@@ -541,8 +621,12 @@ textarea {
 
     .top-h1 {
         font-size: 30px;
+        margin-top: 30%;
+        margin-left: 10%;
     }
-    #card-2{
+
+
+    #card-2 {
         --bs-card-spacer-y: 1rem;
         --bs-card-spacer-x: 1rem;
         --bs-card-title-spacer-y: 0.5rem;
@@ -573,7 +657,8 @@ textarea {
     }
 
     .top-p {
-        font-size: 20px;
+        font-size: 15px;
+        margin-right: 2%;
     }
 
     .Link-button {
@@ -590,15 +675,19 @@ textarea {
         font-size: 10px;
         padding-bottom: 20px;
     }
-.i-s-3,.identifyh3{
-    font-size: 10px;
-}
+
+    .i-s-3,
+    .identifyh3 {
+        font-size: 10px;
+    }
+
     .i-s {
         margin-left: 0px;
         margin-top: 20px;
         margin-left: 20px;
     }
-    .hr-0-1{
+
+    .hr-0-1 {
         display: none;
     }
 
@@ -627,7 +716,6 @@ textarea {
         width: 300px;
     }
 
-    .balll {}
 
     .blogs {
         grid-template-columns: repeat(1, 1fr);
@@ -682,21 +770,79 @@ textarea {
         font-size: 10px;
     }
 
+    footer {
+        padding: 200%;
+    }
+
+    .Address-0 {
+        margin-left: -2%;
+    }
+
     .hr-0-1 {
         width: 300px;
     }
+
+    .gas {
+        width: 90%;
+    }
+
+    .in-a-line {
+        width: 90%;
+    }
+
+    .body {
+        width: 90%;
+    }
+
+    .Footer {
+        width: 90%;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    #Summary {
+        width: 90%;
+    }
+
+    .hi {
+        width: 20%;
+        padding-right: 20%
+    }
+
 }
-#reddit{
-    color: orangered;
-    font-size: 160%;
-}
-#discord{
-    color: blue;
-    font-size: 160%;
-}
-#github{
-    color: white;
+
+#reddit {
     font-size: 160%;
 }
 
-@media only screen and (min-width:688px) and (max-width:992px) {}
+#discord {
+    color: blue;
+    font-size: 160%;
+}
+
+#github {
+    color: white;
+    font-size: 160%;
+    padding-top: -70%;
+}
+
+.ph-btn {
+    background-color: #f7211c;
+}
+
+.bi-btn {
+    background-color: #0a0e57;
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    body{
+        display: none;
+    }
+
+    .tablet-msg{
+        display:contents;
+        text-align: center;
+    }
+}
