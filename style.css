@@ -1,15 +1,10 @@
-@font-face {
-    font-family: "Spotify Mix Extrabold";
-    src: url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.eot");
-    src: url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/91bf51a8358ebe7c72e49ea84fd8db7f.svg#Spotify Mix Extrabold")format("svg");
-}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+TZ+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 body {
-    font-family: "Spotify Mix Extrabold";
+    font-family: "Ubuntu", sans-serif;
     font-weight: bolder;
     font-style: normal;
 }
@@ -584,7 +579,7 @@ textarea {
     padding-left: 250%;
 }
 
-.mc-2{
+.mc-2 {
     display: none;
 }
 
@@ -593,9 +588,10 @@ textarea {
         flex-direction: column;
     }
 
-    .mc-2{
+    .mc-2 {
         display: grid;
     }
+
     .mc {
         display: none;
     }
@@ -837,12 +833,7 @@ textarea {
 }
 
 @media only screen and (min-width:688px) and (max-width:992px) {
-    body{
+    body {
         display: none;
-    }
-
-    .tablet-msg{
-        display:contents;
-        text-align: center;
     }
 }
