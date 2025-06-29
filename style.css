@@ -1,10 +1,8 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+TZ+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bolder;
     font-style: normal;
 }
@@ -38,8 +36,8 @@ body {
 
 .top-h1 {
     font-weight: bold;
-    font-size: 1050%;
-    margin-left: 3%;
+    font-size: 900%;
+    margin-left: 5%;
     color: white;
 }
 
@@ -76,6 +74,7 @@ body {
     height: 300px;
     margin-top: 6%;
     padding-top: 3%;
+    padding-bottom: 20%;
     margin-left: 6%;
     margin-right: 6%;
 }
@@ -602,7 +601,7 @@ textarea {
 
     .identify-0 {
         padding-bottom: 1900px;
-        margin-bottom: 90px;
+        margin-bottom: 100px;
     }
 
     .i-s-3 {
@@ -669,7 +668,7 @@ textarea {
     .identify-0 {
         flex-direction: column;
         font-size: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 300px;
     }
 
     .i-s-3,
@@ -721,11 +720,12 @@ textarea {
 
     .blog {
         width: 349px;
+        height: 100%;
     }
 
     .blog-2 {
         width: 340px;
-        height: 800px;
+        height: 100%;
     }
 
     .flex {
@@ -807,7 +807,9 @@ textarea {
         padding-right: 20%
     }
 
+
 }
+
 
 #reddit {
     font-size: 160%;
