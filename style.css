@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
 
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bolder;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
     font-style: normal;
 }
+
+
 
 .identifyh3- {
     font-weight: bolder;
@@ -16,13 +19,83 @@ body {
     font-size: 160%;
 }
 
+.btn-one {
+    color: #FFF;
+    font-weight: bolder;
+    transition: all 0.3s;
+    position: relative;
+    margin-left: 20%;
+}
+
+.btn-one span {
+    transition: all 0.3s;
+}
+
+#preloader {
+    background-color: #000000 url(images/loading.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.btn-one::before {
+    color: #FFF;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(229, 226, 226, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+
+.btn-one:hover::before {
+    opacity: 10000;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+
 .top-banner-img {
     background-image: url(images/back-images/background.png);
     background-size: cover;
-    height: 800px;
+    height: 626px;
     padding-top: 80px;
     margin-top: -1.1%;
     margin-bottom: 8%;
+    margin-left: -2%;
+    margin-right: -0.80%;
 }
 
 #text {
@@ -36,15 +109,268 @@ body {
 
 .top-h1 {
     font-weight: bold;
-    font-size: 900%;
-    margin-left: 5%;
+    font-size: 210%;
+    margin-top: 10%;
+    text-align: center;
     color: white;
 }
 
 
+.top-button {
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgba(255, 255, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(29, 28, 30);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-left: 45%;
+}
+
+.top-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.top-button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.top-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+
+.whatsapp {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #00ff00;
+}
+
+.card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+
+.linkedin {
+    margin-top: 1.5em;
+    margin-left: -0.9em;
+    fill: #0077b5;
+}
+
+.card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+
+.github {
+    margin-top: -0.6em;
+    margin-left: 1.2em;
+}
+
+.card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+
+.discord {
+    margin-top: -0.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+}
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #00ff00;
+}
+
+.card1:hover .whatsapp {
+    fill: white;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #0077b5;
+}
+
+.card2:hover .linkedin {
+    fill: white;
+}
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+}
+
+.card3:hover .github {
+    fill: white;
+}
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+    fill: white;
+}
+
+/* From Uiverse.io by Praashoo7 */
+.card {
+    width: 17em;
+    height: 22.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+}
+
+.card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.card a {
+    color: white;
+    transition: .4s ease-in-out;
+}
+
+.card a:hover {
+    color: red;
+}
+
+.card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+}
+
+.card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
 .top-p {
-    font-size: 150%;
-    margin-left: 10%;
+    font-size: 100%;
+    margin-left: 37.5%;
     color: white;
 }
 
@@ -60,13 +386,13 @@ body {
 
 
 .identify {
-    margin-right: 40%;
-    margin-left: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .i-s {
-    margin-left: 65%;
-    margin-top: -8%;
+    margin-left: 110%;
+    margin-top: -18%;
     font-weight: bolder;
 }
 
@@ -162,7 +488,7 @@ body {
 .icon-part-2 {
     color: #FFFFFF;
     font-weight: bolder;
-    background-image: url(images/icons/React-background.jpg);
+    background-image: url(images/icons/react-background.jpg);
     height: 300px;
     border-radius: 3%;
     padding-top: 3%;
@@ -453,7 +779,7 @@ textarea {
     background-color: white;
 }
 
-.AR {
+/* .AR {
     text-decoration: none;
     color: black;
     margin-left: 4%;
@@ -467,7 +793,59 @@ textarea {
     transition-duration: 0.1s;
 
     color: black;
+} */
+
+.AR {
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgba(255, 255, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(134, 108, 250);
+    border: .25em solid var(--glow-color);
+    padding: 0.7em 3ex;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-left: 1%;
+    text-decoration: none;
 }
+
+.AR::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.AR:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.AR:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
 
 .nav-link {
     color: black;
@@ -545,7 +923,7 @@ textarea {
 
 .i-s-3 {
     font-size: 15px;
-    font-weight: bolder;
+
 }
 
 .Shepherd {
@@ -609,7 +987,7 @@ textarea {
     }
 
     .Top-section {
-        margin-top: 60px;
+        margin-top: 30000px;
         width: 360px;
     }
 
@@ -844,4 +1222,13 @@ textarea {
     body {
         display: none;
     }
+}
+
+#About {}
+
+.identifyh3-,
+.identifyh3 {
+    font-weight: bolder;
+    text-align: center;
+
 }
