@@ -9,7 +9,6 @@ body {
 }
 
 
-
 .identifyh3- {
     font-weight: bolder;
 }
@@ -297,7 +296,7 @@ body {
 }
 
 /* From Uiverse.io by Praashoo7 */
-.card {
+/* .card {
     width: 17em;
     height: 22.5em;
     background: #171717;
@@ -366,7 +365,7 @@ body {
     background: red;
     color: white;
     cursor: pointer;
-}
+} */
 
 .top-p {
     font-size: 100%;
